@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:id="@+id/tv1"
+        android:layout_marginTop="250dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/tv1"
+        android:hint="USERNAME"
+        android:drawableLeft="@drawable/login"
+        android:textAlignment="center"
+        android:layout_alignBottom="@id/tv1"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/username1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Password:"
+        android:id="@+id/tv2"
+
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/tv1"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass1"
+        android:layout_toRightOf="@id/tv2"
+        android:layout_alignBottom="@id/tv2"
+        android:hint="PASSWORD"
+        android:drawableLeft="@drawable/lock"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:onClick="demo"
+        />
+</RelativeLayout>
